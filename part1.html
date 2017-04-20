@@ -1,0 +1,71 @@
+<html>
+
+<head>
+
+<style>
+
+</style>
+</head>
+
+<body>
+<form method="post" action="#">
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+<fieldset>
+          <legend>Your Face </legend>
+		  Your image
+		  <input type="file" required><br>
+		  Image preview	
+		  <img id="preview">
+</fieldset>
+
+<fieldset>
+          <legend>Your General Details </legend>
+		  Name
+		  <input type="textarea" placeholder="Name"><br>
+		  Gender
+		  <input type="radio" name="sex" value="male" checked>Male 
+		  <input type="radio" name="sex" value="female" >Female<br>
+		  Age
+		  <input type="number"><br>
+		  Date of birth
+		  <input type="date"><br>
+		  Favourite color
+		  <input type="color"><br>
+		  Which Country
+		  <select name="country">
+				   <option value="none">None</option>
+			       <option value="india">India</option>
+                   <option value="australia">Australia</option>
+                   <option value="america">America</option>
+				   <option value="brazil">Brazil</option>
+				   <option value="england">England</option>
+		  </select>
+</fieldset>
+
+<fieldset>
+          <legend>Your Indicators </legend>
+		  Height:
+		  Short <input type="range" min="0" max="100"> Tall<br>
+		  Weight:
+		  Poor <input type="range" min="0" max="100"> Rich<br>
+</fieldset>
+
+<fieldset>
+          <legend>Your Contact Information </legend>
+		  Email:
+		  <input type="email" placeholder="Email"><br>
+		  Mobile:
+		  <input type="number" placeholder="Number"><br>
+		  Address:
+		  <input type="textarea" placeholder="Address"><br>
+		  Method to contact you:
+		  <input type="radio" name="contact" checked>Email
+		  <input type="radio" name="contact">Whatsapp
+		  <input type="radio" name="contact">In-app chat
+</fieldset>
+<br>
+<input type="button" value="Submit">
+</form>
+</body>
+
+</html>

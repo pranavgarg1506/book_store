@@ -1,0 +1,202 @@
+<html>
+<head>
+
+<title>  </title>
+
+<style>
+body{
+	   margin:0px;
+	   width:100%;
+	   background-color:white;
+	   
+}
+
+
+.header{
+        width:100%;
+		background:#483d8b;
+		height:100px;
+		position:fixed;
+}
+.container1{
+            width:80%;
+		   margin-left:8.5%;
+		   padding-top:20px;
+		   background:#483d8b;
+		   padding-left:20px;
+		   padding-right:20px;
+		   height:80px;
+			
+}
+.logo{
+      float:left;
+	  font-size:35;
+	  color:white;
+	  
+}
+.logo:hover{color:red; font-size:45;}
+td:hover{ font-size:30;background:brown;}
+.link{	
+      float:right;
+	  
+}
+td{
+   padding-right:20px;
+   background:green;
+   
+   
+   
+}
+a{color:white;}
+	
+
+#space{
+width:100%;
+height:160px;
+background:white;
+}
+form{
+	  border:1px  black;
+	  width:1220px;
+	  height:500px;
+	  margin:0 auto;
+	  
+}
+input[type=text], input[type=password], input[type=number], input[type=email] {
+    width: 50%;
+    padding: 12px 15px;
+    margin: 20px 20px;
+    display: inline-block;
+    border: .5px solid #0000ff;
+    box-sizing: border-box;
+	height:50px;
+}
+button {
+    background-color: #4CAF50;
+    
+    padding: 14px 20px;
+    margin: 12px 15px;
+    border: none;
+    cursor: pointer;
+    
+	
+}
+.title{
+	    color:red;
+		margin-left:150px;
+		
+}
+
+.footer{
+         width:100%;
+		 height:auto;
+		 background-color:black;
+		 color:white;
+		 
+
+		 
+}
+
+.container3{
+            width:80%;
+			background:black;
+			margin-left:9%;
+			padding-left:20px;
+			padding-top:10px;
+			padding-bottom:20px;
+			height:250px;
+}
+
+.section{
+         float:left;
+		 width:220px;
+		 margin-left:30px;
+		 margin-right:70px;
+		 padding-left:20px;
+}
+
+</style>
+</head>
+<body>
+
+<?php
+if(isset($_SESSION['uid'])){
+header("location:try2.php");
+}
+?>
+
+
+<div class="header">
+      
+       <div class="container1">
+	   
+	        <div class="logo">
+		                  MY PAL 
+			</div>
+			
+			<div class="link">
+			     <table border=".2">
+				     <tr>
+					     <td> <a href="try2.php" style="text-decoration:none"> HOME </a> </td>
+						 <td> <a href="login1.php"  style="text-decoration:none" > LOG IN </a> </td>
+					 </tr>
+				       
+				 </table>
+			</div>
+			
+			
+			 
+			 
+	   </div>
+</div>
+<div id="space"></div>
+
+
+
+    <div class="title">
+		<h1>  SIGN UP </h1>
+	</div>
+<form action="register1.php" method="post"> 
+   
+        <input type="text" name="name" placeholder="Name" ><br>
+		<input type="number" name="contact" placeholder="Contact"><br>
+		<input type="email" name="email" placeholder="E-mail"><br>
+		<input type="text" name="un" placeholder="Username"><br>
+		<input type="password" name="pass" placeholder="Password"><br>
+		<button type="submit" style="width: 50%" style="color: white;"> <font size="6">Submit</font></button><br>
+	      
+   
+</form>
+
+<div id="space"></div>
+
+<div class="footer">
+    <div class="container3">
+			<div class="section">
+			        <h2> ABOUT US</h2>
+							   
+			</div>
+			
+			<div class="section">
+			             <h2>Contact Us</h2>  <font size="4">  Mobile no:9875269475 <br> Email:abc@gmail.com </font>
+			</div>
+	    
+        <div class="section">
+		       
+			   <h2> Follow Us </h2>
+			   
+			   <a href="https://www.facebook.com/"><img src="facebook.png" alt="Avatar" class="avatar"  height="20"></a>&nbsp;&nbsp;&nbsp;
+			   <a href="https://www.twitter.com/"><img src="twitter.png" alt="Avatar" class="avatar"  height="20"></a>&nbsp;&nbsp;&nbsp;
+			   <a href="https://plus.google.com/"><img src="google.png" alt="Avatar" class="avatar"  height="20">&nbsp;&nbsp;&nbsp;
+			   <a href="https://www.linkedin.com/"><img src="linkedin.png" alt="Avatar" class="avatar"  height="20">&nbsp;&nbsp;&nbsp;
+			   
+		    
+		</div>
+		
+		
+	</div>	
+  
+</div>
+</body>
+
+</html>
